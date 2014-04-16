@@ -5,10 +5,11 @@
 
 ArrayList<Wave> waves = new ArrayList<Wave>();
 PImage img; 
+int waveTop = 120;
 
 void setup() {
-  size(500, 300);
-  img = loadImage("BoatModel_background.jpg");
+  size(900, 540);
+  img = loadImage("BoatModel_backgroundLRG.jpg");
 
   //Set all ellipses to draw from the Center
   ellipseMode(CENTER);
@@ -20,10 +21,14 @@ void draw() {
   
   //If the mouse is pressed, draw the wave
   if (mousePressed) {
+    //println(mouseY);
+    if(mouseY > waveTop) {
+    
     //Create a new Wave
     Wave w = new Wave();
     //and Add it to the ArrayList
     waves.add(w);
+    }
   }
 
   //Run through all the waves
