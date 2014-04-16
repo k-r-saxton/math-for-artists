@@ -1,6 +1,8 @@
 //First version, sketch based on code from OpenProcessing
 //Create the ArrayList of Waves
 
+//working with Justin
+
 ArrayList<Wave> waves = new ArrayList<Wave>();
 PImage img; 
 
